@@ -117,7 +117,7 @@ Some example commands:
 GestureAction👍 Thumbs DownVolume Down✋ Open PalmPlay/Pause Media☝️ Pointing Up(Reserved for custom actions)
 
 🧾 Project Structure
-📁 NOVA3.0/
+📁 Jarvis 3.0/
 │
 ├── main.py                     # Main Jarvis 3.0 code
 ├── AUTO_SETUP.bat
