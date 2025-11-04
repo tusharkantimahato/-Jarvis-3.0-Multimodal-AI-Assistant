@@ -1,5 +1,9 @@
 # 🤖 Jarvis 3.0 – Multimodal AI Assistant
 
+### Description:
+Jarvis 3.0 is a smart AI desktop assistant built with Python.
+It combines speech recognition, computer vision, and automation to perform tasks like voice control, app launching, gesture recognition, and real-time interaction.
+
 **Jarvis 3.0** is an advanced multimodal desktop assistant built using **Python 3.12**.  
 It combines **Voice Recognition**, **Gesture & Motion Control**, and **Camera Interaction** to create a seamless, hands-free assistant experience.
 
@@ -9,6 +13,8 @@ It combines **Voice Recognition**, **Gesture & Motion Control**, and **Camera In
 
 - 🎙️ **Voice Control:**  
   Execute system commands and interact naturally using speech recognition.
+
+  🔒 ***Lock/Unlock System using Voice:***
 
 - ✋ **Gesture Recognition (via MediaPipe):**  
   Control applications, volume, and playback with hand movements.
@@ -131,14 +137,17 @@ GestureAction👍 Thumbs DownVolume Down✋ Open PalmPlay/Pause Media☝️ Poin
 
 
 🧑‍💻 Author
-Tushar Kanti Mahato
-🔹 GitHub: @codefixer2
+**Tushar Kanti Mahato**
+🔹 GitHub: @codefixer2  
 🔹 Project: Jarvis 3.0 – Multimodal Assistant
 🔹 Version: v3.0
 🔹 Python Runtime: py -3.12
 
-📜 License
+📜 Licensed under the [MIT License](LICENSE)
 This project is licensed under the MIT License – you are free to modify and distribute it with attribution.
+MIT License © 2025 Tushar Kanti Mahato
+
+
 
 💡 Notes
 
