@@ -11,8 +11,8 @@ def register_routes(app):
     def chat():
         """Handle chat API requests"""
         try:
-            data = request.json
-            prompt = data.get('message', '')
+            data = request.get_json(silent=True) or {}
+            prompt = data.get('message', '') if isinstance(data, dict) else ''
             
             if not is_api_configured():
                 return jsonify({

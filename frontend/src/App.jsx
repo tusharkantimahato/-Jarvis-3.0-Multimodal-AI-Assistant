@@ -6,14 +6,18 @@ function App() {
   const [apiHealthy, setApiHealthy] = useState(false)
 
   useEffect(() => {
-    // Check backend health on component mount
-    fetch('http://localhost:5000/api/health')
-      .then(res => res.json())
-      .then(data => {
+    fetch('/api/health')
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Backend health check failed')
+        }
+        return res.json()
+      })
+      .then(() => {
         setApiHealthy(true)
         setStatus('✓ Connected to backend')
       })
-      .catch(err => {
+      .catch(() => {
         setApiHealthy(false)
         setStatus('✗ Backend unreachable')
       })

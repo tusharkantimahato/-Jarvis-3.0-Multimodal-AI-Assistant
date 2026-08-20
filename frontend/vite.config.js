@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { fileURLToPath } from 'node:url'
+
+const root = fileURLToPath(new URL('.', import.meta.url))
 
 // GitHub Pages configuration
 const base = process.env.GITHUB_PAGES === 'true' 
@@ -7,6 +10,7 @@ const base = process.env.GITHUB_PAGES === 'true'
   : '/'
 
 export default defineConfig({
+  root,
   plugins: [react()],
   base: base,
   server: {
