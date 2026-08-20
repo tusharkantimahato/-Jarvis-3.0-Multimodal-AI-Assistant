@@ -4,9 +4,8 @@ import { fileURLToPath } from 'node:url'
 
 const root = fileURLToPath(new URL('.', import.meta.url))
 
-// GitHub Pages configuration
-const base = process.env.GITHUB_PAGES === 'true' 
-  ? '/Jarvis-3.0-Multimodal-AI-Assistant/'  // Change this to your repo name
+const base = process.env.GITHUB_PAGES === 'true'
+  ? '/Jarvis-3.0-Multimodal-AI-Assistant/'
   : '/'
 
 export default defineConfig({
