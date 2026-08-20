@@ -32,9 +32,7 @@ cp .env.example .env
 pip install -r requirements.txt
 
 # Frontend dependencies
-cd react
 npm install
-cd ..
 ```
 
 ### 3. Run Application
@@ -108,7 +106,6 @@ set PYTHONPATH=%cd%\src
 python run_web.py
 
 # Terminal 2: Frontend (optional, for development)
-cd react
 npm run dev
 ```
 
@@ -276,13 +273,12 @@ vercel --prod
 The React frontend can be deployed to GitHub Pages:
 
 ```bash
-cd react
 npm run build
-npm run deploy
 ```
 
 - **Deployed at:** `https://tusharkantimahato7.github.io/Jarvis-3.0-Multimodal-AI-Assistant/`
 - **Configuration:** `.github/workflows/deploy.yml`
+- GitHub Pages hosts the frontend only. The Flask backend and Gemini API calls still need a server deployment such as Railway or another Python-capable host.
 
 ---
 
@@ -310,9 +306,8 @@ PORT=5001
 
 **React build issues:**
 ```bash
-cd react
-rm -rf node_modules package-lock.json
 npm install
+npm run build
 ```
 
 ### Debug Mode
